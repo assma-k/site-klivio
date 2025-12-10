@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <link rel="stylesheet" href="style.css"/>
       <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Klivio</title>
     </head>
@@ -11,26 +12,29 @@
     <script src="search.js"/></script>
     <header class="entete">
 
-        <img src="/site-klivio/ressources/logo.png" alt="logo"/>
+        <img src="/site-klivio/ressources/logo.png" id="logo1" alt="logo"/>
         <nav>
-            <a href="#formationPop">Les formations</a>
+            <a href="#formationPop" id="liens">Les formations</a>
         </nav>
 
-        <form>
-           <input type="search" id="searchBar" placeholder="Rechercher" name="search"/>
-           <button type="submit" id="loupe"><span class="icone-loupe"></span></button>
-        </form>
-
-       <button class="connexion">Connexion</button>
-       <button class="inscription">Inscription</button>
-       
-    </header>
+          <form class="searchBar">
+              <input type="search" id="searchBar" placeholder="Rechercher" name="search"/>
+              <button type="submit" id="loupe"><span class="icone-loupe"></span></button>
+          </form>
+           
+          <div id="coninsc" class="connexion-inscription">
+              <button class="connexion">Connexion</button>
+              <button class="inscription">Inscription</button>
+          </div>
+     </header>
 
     <main>
       <section class="accueil">
-        <h1>KLIVIO,L'ALLIÉ DE VOTRE PROGRESSION</h1>
+        <div class="titre">
+        <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
         <h4 id="textephoto">LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h4>
         <button>En savoir plus</button>
+        </div>
       </section>
 
 
@@ -261,7 +265,39 @@
     </main>
 
     <footer class="mentions">
-       // logo + texte mention legal + cordoner + bouton connexion + inscription + site since + reseau
+        <fieldset class="foot">
+        <img src="/site-klivio/ressources/logo.png" alt="logo"/>
+         <div class="mentions">
+            <p>Mentions légales</p>
+            <ul>
+                <li>CGU</li>
+                <li>CGV</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+         </div>
+
+         <div>
+            <ul>
+                <li>1 place république,<br>75003 Paris</li>
+                <li>01.02.03.04.05</li>
+                <li>contact@klivio.fr</li>
+            </ul>
+         </div>
+           
+         <button class="connexion">connexion</button>
+         <button class="inscription">inscription</button>
+        </fieldset>
+        <p id="since">© Klivio- 2025</p>
+
+        <div class="social">
+            <p>Suivez - nous</p>
+            <img src="/site-klivio/ressources/social icon/Social Icons f.png" alt="facebook"/>
+            <img src="/site-klivio/ressources/social icon/x.png" alt="x"/>
+            <img src="/site-klivio/ressources/social icon/insta.png" alt="instagram"/>
+            <img src="/site-klivio/ressources/social icon/in.png" alt="linkedin"/>
+        </div>
+
     </footer>
     </body>
 

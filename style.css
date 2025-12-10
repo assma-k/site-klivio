@@ -1,0 +1,93 @@
+body{
+font-family: "Montserrat",sans-serif;
+margin: 0%;
+}
+.entete{
+    background-color: #152237;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    padding: 0 0px;
+}
+
+#logo1{
+    width: 84px;
+    height: 31px;
+    align-self: center;
+    display: block;
+}
+
+#coninsc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBar{
+    box-sizing: border-box;
+    border-radius: 6px;
+    border:1px solid #FFFFFF;
+    overflow: hidden;
+    width: 477px;
+    height: 40px;
+}
+#searchBar{
+      background-color: #152237;
+      width: 680px;
+    height: 40px;
+    color: #FFFFFF;
+    
+
+}
+#liens{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.connexion{
+    border-radius: 6px;
+  background-color: #FFFFFF;
+  border: none;
+  width: 130px;
+    height: 40px;
+}
+.inscription{
+    border-radius: 6px;
+    background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+    border: none;
+    width: 130px;
+    height: 40px;
+}
+
+.accueil{
+    background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/bg-header.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 451px;
+    
+}
+
+h1{
+   color:#152237;
+   margin: 0%;
+   font-size: 48px;
+}
+.titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60vh;
+   
+}
+#textephoto{
+    margin: 0.5%;
+}
+

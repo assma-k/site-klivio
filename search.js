@@ -3,7 +3,7 @@ function goTo(){
     const section = {
         "accueil" : "accueil",
         "formationpop" : "formationPop",
-        "formationrec" : "foramtionRec",
+        "formationrec" : "formationRec",
         "avis" : "avis",
         "contact" : "contact"
     };
