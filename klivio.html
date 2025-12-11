@@ -19,7 +19,7 @@
 
           <form class="searchBar">
               <input type="search" id="searchBar" placeholder="Rechercher" name="search"/>
-              <button type="submit" id="loupe"><span class="icone-loupe"></span></button>
+              <button type="submit" id="loupe"><img src="ressources/icone loup.png" alt="loupe" class="img-loupe"/></button>
           </form>
            
           <div id="coninsc" class="connexion-inscription">
@@ -33,15 +33,16 @@
         <div class="titre">
         <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
         <h4 id="textephoto">LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h4>
-        <button>En savoir plus</button>
+        <button id="savoirplus">En savoir plus</button>
         </div>
       </section>
 
 
       <section class="formationPop">
         <h2 class="formation">Les formations populaires</h2>
-        <article>
-            <img src="ressources/img-course.png" alt="formationpop-img-1"/>
+        <div class="boites">
+        <article class="f">
+            <img src="ressources/img-course.png" alt="formationpop-img-1" id="imgpop"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Parler en public</p>
             <p class="autorForma">Sonia Lefévre | Coach prise de parole</p>
@@ -55,8 +56,8 @@
             <p class="descForma">Gagner en aisance et capter votre auditoire</p>
         </article>
 
-        <article>
-            <img src="ressources/img-course.png" alt="formationpop-img-2"/>
+        <article class="f">
+            <img src="ressources/img-course.png" alt="formationpop-img-2" id="imgpop"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Gérer le stress</p>
             <p class="autorForma">Lucie Garnier | Formatrice</p>
@@ -70,8 +71,8 @@
             <p class="descForma">Apprendre à rester serein face aux défis</p>
         </article>
 
-        <article>
-        <img src="ressources/img-course.png" alt="formationpop-img-3"/>
+        <article class="f">
+        <img src="ressources/img-course.png" alt="formationpop-img-3" id="imgpop"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Travailler en équipe</p>
             <p class="autorForma">David Moreau | Expert</p>
@@ -84,8 +85,8 @@
             </div>
             <p class="descForma">Collaborez efficacement, même à distance</p>
         </article>
-        <article>
-        <img src="ressources/img-course.png" alt="formationpop-img-4"/>
+        <article class="f">
+        <img src="ressources/img-course.png" alt="formationpop-img-4" id="imgpop"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Gérer son tomps</p>
             <p class="autorForma">Claire Dumas | Coach organisation</p>
@@ -98,6 +99,7 @@
             </div>
             <p class="descForma">Optimiser vos journées et gagnez en efficacité</p>
         </article>
+        </div>
         
          <button class="plusForma">Voir plus de formations</button>
       </section>
@@ -105,7 +107,8 @@
 
       <section class="formationRec">
         <h2 class="formations">Les formations récentes</h2>
-        <article>
+        <div class="boites">
+        <article class="f">
         /<img src="ressources/img-course.png" alt="formationrec-img-1"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Mieux communiquer</p>
@@ -120,7 +123,7 @@
             <p class="descForma">Ameliorez vos échanges et votre impact relationnel</p>
         </article>
 
-        <article>
+        <article class="f">
         <img src="ressources/img-course.png" alt="formation-img-1"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Maîtriser ses émotions</p>
@@ -135,7 +138,7 @@
             <p class="descForma">Développez calme et intelligence émotionnelle</p>
         </article>
 
-        <article>
+        <article class="f">
         <img src="ressources/img-course.png" alt="formation-img-1"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Résoudre les problèmes</p>
@@ -149,7 +152,7 @@
             </div>
             <p class="descForma">Analysez, décidez et trouvez des solutions durables</p>
         </article>
-        <article>
+        <article class="f">
         <img src="ressources/img-course.png" alt="formation-img-1"/>
             <p>15.99 €<span class="prix"> 60 €</span></p>
             <p class="nomImg">Leadership positif</p>
@@ -163,6 +166,7 @@
             </div>
             <p class="descForma">Inspirez, motivez et fédérez votre equipe</p>
         </article>
+        </div>
 
          <button class="plusForma">Voir plus de formations</button>
       </section>

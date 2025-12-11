@@ -1,6 +1,9 @@
 body{
 font-family: "Montserrat",sans-serif;
 margin: 0%;
+padding: none;
+min-width: 90%;
+max-width: 100%;
 }
 .entete{
     background-color: #152237;
@@ -8,10 +11,10 @@ margin: 0%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    min-width: 1200px;
     max-width: 100%;
     height: 80px;
-    padding: 0 0px;
+   /* padding: 0 0px;*/
 }
 
 #logo1{
@@ -30,23 +33,44 @@ margin: 0%;
 .searchBar{
     box-sizing: border-box;
     border-radius: 6px;
-    border:1px solid #FFFFFF;
+    border:2px solid #FFFFFF;
     overflow: hidden;
     width: 477px;
     height: 40px;
+    display: flex;
+    align-items: center;
 }
 #searchBar{
       background-color: #152237;
-      width: 680px;
+      width: auto;
     height: 40px;
     color: #FFFFFF;
-    
-
+    border: none;
+    padding: 0 10px;
+    flex: 1;
+}
+#loupe{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px;
+}
+.img-loupe{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 #liens{
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .connexion{
@@ -68,7 +92,8 @@ margin: 0%;
     background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/bg-header.png');
     background-size: cover;
     background-position: center;
-    width: 100%;
+    min-width: 1200px;
+    max-width: 100%;
     height: 451px;
     
 }
@@ -90,4 +115,32 @@ h1{
 #textephoto{
     margin: 0.5%;
 }
+#savoirplus{
+    border-radius:6px;
+    border:none;
+    width:130px;
+    height: 40px;
+    margin-top:20px;
+}
+.boites{
+    display:flex;
+    justify-content: center;
+    
+
+}
+#imgpop{
+ 
+   margin-right:30px;
+   width:305px;
+   justify-content: center;
+   height: 206px;
+
+}
+@media (max-width:1200px) {
+    .boites{
+        flex-direction: column;
+    }
+    
+}
+
 
