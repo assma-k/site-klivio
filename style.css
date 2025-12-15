@@ -6,6 +6,9 @@ min-width: 1200px;
 max-width: 100%;
 font-size:16px;
 }
+
+/*entete barre bleu*/
+
 .entete{
     background-color: #152237;
     display: flex;
@@ -13,7 +16,6 @@ font-size:16px;
     align-items: center;
     justify-content: space-around;
     height: 80px;
-   /* padding: 0 0px;*/
 }
 
 #logo1{
@@ -86,6 +88,9 @@ font-size:16px;
     width: 130px;
     height: 40px;
 }
+/*fin entete*/
+
+/*1er section grd photo*/
 
 .accueil{
     background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/bg-header.png');
@@ -98,7 +103,10 @@ font-size:16px;
 h1{
    color:#152237;
    margin: 0%;
+   font-weight:800;
+   letter-spacing: -1.5%;
    font-size: 48px;
+   text-transform: uppercase;
 }
 .titre{
     display: flex;
@@ -110,7 +118,10 @@ h1{
    
 }
 #textephoto{
-    margin: 0.5%;
+    margin: 0.1%;
+    padding:2px;
+    font-size:20px;
+    font-weight:500;
 }
 #savoirplus{
     border-radius:6px;
@@ -119,21 +130,25 @@ h1{
     height: 40px;
     margin-top:20px;
 }
+/*fin 1er section*/
+
+/* 2eme et 3eme section formation popullaire et recente*/
+
 .boites{
     display:flex;
     justify-content: center;
     padding:0px;
     margin:0px;
-    gap: 60px;
+    gap: 90px;
   
 }
 /*.formationsrec, .formationspop{
    margin: 0px;
 }*/
 .formationPop{
-    margin: 0px 70px;
+    margin: 0px auto;
     background-color: #FFFFFF;
-    height: 632px;;
+    height: 632px;
     
 }
 .f2, .f{
@@ -157,11 +172,12 @@ h1{
     width:300px;
 }
 .formationpop{
-    margin:53px;
-    margin-left:0px;
-    margin-right:0px;
+    margin-left:109px;
+    margin-top:53px;
+    margin-bottom:40px;
     font-size: 36px;
     color: #152237;
+    text-align: left;
 }
 .formationRec{
     background-color: #152237;
@@ -172,14 +188,14 @@ h1{
     font-size: 36px;
     padding-top:53px;
     padding-bottom:53px;
-    margin:0px;
-    margin-left:70px;
+    margin:0px 109px;
+    text-align: left;
 }
 .f2{
     color: #FFFFFF;
 }
 .plusForma1{
-    margin-top:115px;
+    margin-top:28px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -192,7 +208,7 @@ h1{
 }
 
 .plusForma2{
-     margin-top:115px;
+     margin-top:30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -207,11 +223,12 @@ h1{
 font-size:24px;
 font-weight: 700;
 margin: 0px 0px;
-padding-top:15px;
+padding-top:25px;
 }
 .autorForma, .descForma{
     font-weight: 400;
     font-family: 'Montserrat';
+    margin:7px 0px;
 }
 .pr, .pr1{
    border:1px solid;
@@ -233,6 +250,7 @@ padding-top:15px;
     font-weight:700;
     justify-content: center;
     color: #152237;
+    padding:4px;
 }
 .prix{
     font-size:10px;
@@ -260,12 +278,17 @@ color:#FFC700;
 [data-active="false"]{
     color:#FFC7004D;
 }
+/*fin section 2 et 3 */
+
+/*avis */
 
 .davis{
     display: flex;
-    align-items: center;
-    margin:0px 90px;
+    justify-content: center;
+    margin-left:90px;
+    margin-right:0px;
     margin-bottom:150px;
+    gap: 30px;
 }
 .avisP{
     width:656px;
@@ -295,22 +318,34 @@ h2{
     height: 472px;
     object-fit: cover;
 }
-.list{
-   
-}
+/*fin avis*/
+
+/*debut avantages klivio*/
+
 .avanta{
    display:flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between; 
-   margin:0px 90px;
+margin:0px 90px;
+padding-top: 90px;
 }
 .av{
     text-align: start;
     margin:0px 30px;
-    padding:40px 0px;
+    padding:20px 0px;
+    
+}
+.imgav{
+    width: 727px;
+    height: 472px;
+}
+.list{
+    padding-top: 0px;
 }
 .avantages{
+    height: 641px;
     background-color: #F5F5F5;
+   
 }
 .lis{
 width: 616px;
@@ -319,10 +354,46 @@ font-weight: 400;
 font-size: 24px;
 line-height: 28px;
 letter-spacing: -0.015em;
+padding-left:0px;
 list-style:none;
 padding-left:0px;
 }
-#list-1-1{
-    list-style-image:url("/root/site_klivio/site-klivio/ressources/icon list 1/Icon fleches coter.png");
-    padding-left:40px;
+
+.lis li{
+   position:relative;
+   padding-left:40px;
+   margin-bottom:18px;
 }
+
+.lis li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.lis li:nth-child(1)::before {
+    background-image:url("ressources/icon-list-1/Icon-fleches-coter.png");
+}
+.lis li:nth-child(2)::before{
+    background-image:url("ressources/icon-list-1/Icon stylos.png");
+}
+.lis li:nth-child(3)::before{
+    background-image:url("ressources/icon-list-1/Icon fleches.png");
+}
+.lis li:nth-child(4)::before{
+    background-image:url("ressources/icon-list-1/Icon star.png");
+}
+.lis li:nth-child(5)::before{
+    background-image:url("ressources/icon-list-1/clock-backward icon.png");
+}
+.lis li:nth-child(6)::before{
+    background-image:url("ressources/icon-list-1/Icon commentaire.png");
+}
+/*fin avantages klivio*/
+
+
