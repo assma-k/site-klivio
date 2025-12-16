@@ -1,5 +1,5 @@
 body{
-font-family: "Montserrat";
+font-family: "Montserrat", sans-serif;
 margin: 0%;
 padding: none;
 min-width: 1200px;
@@ -142,9 +142,7 @@ h1{
     gap: 90px;
   
 }
-/*.formationsrec, .formationspop{
-   margin: 0px;
-}*/
+
 .formationPop{
     margin: 0px auto;
     background-color: #FFFFFF;
@@ -172,7 +170,7 @@ h1{
     width:300px;
 }
 .formationpop{
-    margin-left:109px;
+    margin-left:25px;
     margin-top:53px;
     margin-bottom:40px;
     font-size: 36px;
@@ -188,7 +186,7 @@ h1{
     font-size: 36px;
     padding-top:53px;
     padding-bottom:53px;
-    margin:0px 109px;
+    margin:0px 25px;
     text-align: left;
 }
 .f2{
@@ -227,7 +225,7 @@ padding-top:25px;
 }
 .autorForma, .descForma{
     font-weight: 400;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     margin:7px 0px;
 }
 .pr, .pr1{
@@ -251,11 +249,13 @@ padding-top:25px;
     justify-content: center;
     color: #152237;
     padding:4px;
+    font-family: 'Montserrat',sans-serif;
 }
 .prix{
     font-size:10px;
     text-decoration: line-through;
     font-style:normal;
+    font-weight: 400;
 }
 .img-t{
     position:relative;
@@ -326,14 +326,19 @@ h2{
    display:flex;
    align-items: flex-start;
    justify-content: space-between; 
-margin:0px 90px;
+margin:0px 80px;
 padding-top: 90px;
 }
 .av{
-    text-align: start;
-    margin:0px 30px;
-    padding:20px 0px;
-    
+ margin-top: 0px;
+ padding-right: 130px;
+ color: #152237;
+ font-weight: 900;
+font-style: Black;
+font-size: 40px;
+line-height: 36px;
+letter-spacing: -1.5%;
+text-transform: uppercase;
 }
 .imgav{
     width: 727px;
@@ -341,6 +346,7 @@ padding-top: 90px;
 }
 .list{
     padding-top: 0px;
+    flex-direction: column;
 }
 .avantages{
     height: 641px;
@@ -374,6 +380,7 @@ padding-left:0px;
   height: 24px;
   background-size: contain;
   background-repeat: no-repeat;
+  padding-right:10px;
 }
 
 .lis li:nth-child(1)::before {
@@ -396,4 +403,33 @@ padding-left:0px;
 }
 /*fin avantages klivio*/
 
+/*debut creer formation klivio*/
+
+.cree{
+    height:641px;
+    background-color: #44DD8A;
+}
+
+.creek{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-top:60px;
+    margin: 0px 80px;
+    gap: 70px;
+}
+
+.listh2{
+    flex-direction: column;
+}
+
+.listcree{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.5%;
+    
+   
+
+}
 
