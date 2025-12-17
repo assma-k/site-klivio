@@ -302,6 +302,7 @@ h2{
     text-align: center;
     font-size:40px;
     font-weight: 900;
+    color: #152237;
 }
 .imgA{
     border-radius:50%;
@@ -313,11 +314,7 @@ h2{
     font-weight:700;
 }
 
-.creeforma{
-    width: 727px;
-    height: 472px;
-    object-fit: cover;
-}
+
 /*fin avis*/
 
 /*debut avantages klivio*/
@@ -331,14 +328,16 @@ padding-top: 90px;
 }
 .av{
  margin-top: 0px;
- padding-right: 130px;
+ padding-left: 40px;
  color: #152237;
  font-weight: 900;
-font-style: Black;
+/*font-style: Black;*/
 font-size: 40px;
 line-height: 36px;
-letter-spacing: -1.5%;
+/*letter-spacing: -1.5%;*/
 text-transform: uppercase;
+text-align: start;
+
 }
 .imgav{
     width: 727px;
@@ -363,24 +362,28 @@ letter-spacing: -0.015em;
 padding-left:0px;
 list-style:none;
 padding-left:0px;
+
 }
 
 .lis li{
-   position:relative;
    padding-left:40px;
    margin-bottom:18px;
+    position:relative;
 }
 
 .lis li::before {
   content: "";
-  position: absolute;
   left: 0;
   top: 0.2em;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   padding-right:10px;
+  position: absolute;
+ 
+   margin-bottom:18px;
+   text-align: start;
 }
 
 .lis li:nth-child(1)::before {
@@ -415,7 +418,7 @@ padding-left:0px;
     flex-direction: row-reverse;
     align-items: flex-start;
     padding-top:60px;
-    margin: 0px 80px;
+    margin: 0px 60px;
     gap: 70px;
 }
 
@@ -423,13 +426,245 @@ padding-left:0px;
     flex-direction: column;
 }
 
+.creeforma{
+    width: 727px;
+    height: 472px;
+    object-fit: cover;
+}
+
 .listcree{
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.5%;
-    
-   
-
+    list-style: none;
+}
+.listcree li{
+    margin-bottom:18px;
+    padding-left:40px;
+    text-align:start;
+    position: relative;
 }
 
+.listcree li::before {
+content: "";
+  left:0;
+  top: 0.2em;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+    margin-bottom:18px;
+    
+}
+
+.listcree li:nth-child(1)::before{
+    background-image:url("ressources/icon-list-2/Icon-main.png");
+}
+.listcree li:nth-child(2)::before{
+    background-image:url("ressources/icon-list-2/Icon-coeur.png");
+}
+.listcree li:nth-child(3)::before{
+    background-image:url("ressources/icon-list-2/Icon-stylos-pour-2-list.png");
+}
+.listcree li:nth-child(4)::before{
+    background-image:url("ressources/icon-list-2/Icon-parametre.png");
+}
+.listcree li:nth-child(5)::before{
+    background-image:url("ressources/icon-list-2/user-profile.png");
+}
+
+/* fin creer forma */
+
+/*debut a proppos*/
+
+.propos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.proposlogo{
+    width: 430px;
+    height: 155px;
+    
+}
+
+.h2logo1, .h2logo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 640px;
+    width:50%;
+}
+
+.pro{
+    height: 295px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #152237;
+    padding-right: 50px;
+}
+
+.proposh2{
+    text-align: start;
+    color: #152237;
+}
+
+.h2logo1{
+    background-color: #F5F5F5;
+    align-items: flex-start;
+    padding-left: 60px;
+}  
+.h2logo2{
+    background-color: #152237;
+    padding-left:20px;
+}
+
+.contact{
+    height:641px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 70px;
+    padding-bottom: 50px;
+}
+.nomC, .emailC{
+    width:598px;
+    height:45px;
+    background-color: #152237;
+    border: none;
+}
+
+.msg{
+    width:1335px;
+    height: 194px;
+    background-color: #152237;
+    border:none;
+}
+.msgcon{
+    padding-bottom: 50px;
+}
+.envoyerC{
+    width:357px;
+    height:45px;
+    background-color: #44DD8A;
+    border: none;
+    border-radius: 6px;
+}
+.nous{
+    margin-bottom:30px;
+}
+
+.contactB{
+    border: none;
+    border-bottom: 2px #44DD8A solid;
+    margin-bottom:60px;
+    width:350px;
+}
+footer{
+    height:489px;
+    background-color: #152237;
+    color: #FFFFFF;
+}
+
+.foot-1{
+    background:linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
+    border: none;
+    margin:0px;
+    padding:0px;
+    height:18px;
+}
+
+.mentions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.ment, .ment2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.logofoot{
+    width:243px;
+    height:87px;
+}
+.pfoot{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.coordo, .legales{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.coordo li{
+    margin-bottom:18px;
+    padding-left:30px;
+    text-align:start;
+    position: relative;
+    text-indent: -40px;
+}
+
+.coordo li::before{
+    content: "";
+  right: 0;
+  top: 0.2em;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+   padding-left:30px;
+    margin-bottom:18px;
+    padding-right: 10px;
+}
+
+.coordo li:nth-child(1)::before{
+    background-image: url("ressources/social-icon/marker-02.png");
+}
+.coordo li:nth-child(2)::before{
+    background-image: url("ressources/social-icon/phone.png");
+}
+.coordo li:nth-child(3)::before{
+    background-image: url("ressources/social-icon/mail-01.png");
+}
+
+.butt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.foot-2{
+    border: none;
+    border-bottom: 2px #44DD8A solid;
+    margin:0px 80px;
+}
