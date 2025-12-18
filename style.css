@@ -389,7 +389,9 @@ text-align: start;
 }
 
 .lis li:nth-child(1)::before {
-    background-image:url("ressources/icon-list-1/Icon-fleches-coter.png");
+    background-image:url("ressources/icon-list-1/arrow-up-right.png");
+    height: 30px;
+    width:30px;
 }
 .lis li:nth-child(2)::before{
     background-image:url("ressources/icon-list-1/Icon stylos.png");
@@ -824,7 +826,7 @@ footer{
         margin: 0 auto;
     } 
 
-   .boites, .mentions, .avis, .propos, .avantages, .titre{
+   .boites, .mentions, .avis, .avantages, .titre{
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -838,12 +840,13 @@ footer{
     .davis, .avanta, .creek, .propos, .formu {
     align-items: center;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     margin: 0;
    
    }
     
-    .searchBar, .nomC, .emailC, .msg, .creeforma{
+    .searchBar, .nomC, .creeforma{
         width:100%;
         max-width:100%;
     }
@@ -858,6 +861,7 @@ footer{
     img, p, article, h2, li, ul{
     max-width:100%;
     height:auto;
+    
 }
     .creek{
         display: flex;
@@ -887,14 +891,148 @@ footer{
         width: 100%;
         min-width: 324px;
         height: 243px;
-       
     }
-    .nomC, .emailC .msgcon{
-        width:100%;
+
+.avanta, .creek {
+        padding: 0 20px; 
+    }
+
+    .listcree{
+        padding-left: 0;
+    }
+
+    .listcree li::before{
+        width: 30px;
+        height: 30px;
+    }
+
+    .lis li::before{
+        width: 32px;
+        height: 32px;
+    }
+
+    .lis li:nth-child(1)::before{
+        width:32px;
+        height: 32px;
+    }
+
+    .nomC, .emailC, .msg{
+        width:356px;
         height:auto;
-        min-width:356px;
+        min-height:46px;
+        margin: 0;
+        
     
     }
+
+    .creek .av {
+        order: 1;
+    }
+
+    .creek .creeforma {
+        order: 2;
+    }
+
+    .creek .listcree {
+        order: 3;
+    }
     
+    .creek .jsp {
+        display: contents;
+    }
+
+    .davis{
+        gap: 70px;
+        text-align: center;
+    }
+    
+    .avisP{
+        height: auto;
+        width: auto;
+        text-align: left;
+        padding:0 20px;
+    }
+
+    .propos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2logo2, .h2logo1{
+        min-height:400px;
+        width:100%;
+        padding: 0;
+        flex:1 0 auto;
+    }
+
+    .proposlogo{
+        width: 214px;
+        height:77px;
+    }
+
+    .proposh2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .plusForma1, .plusForma2{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pro{
+        height: auto;
+        padding: 0 20px;
+    }
+    .formu{
+        gap: 20px;
+        padding-bottom:20px;
+    }
+
+    .contact{
+        text-align: center;
+    
+    }
+
+    .contactB{
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2, .nous{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .entete{
+        padding-bottom: 0;
+    }
+
+    .social, .butt, .foot-2{
+        display: none;
+    }
+    
+    .mentions{
+        padding: 40px 0px;
+    }
+
+    .legales, .coordo, .pfoot{
+        text-align: center;
+        align-items: center;
+    }
+
+    .ment, .ment2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    }
+
+ 
+
 
 }
+ 
