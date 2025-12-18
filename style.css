@@ -1,8 +1,12 @@
+
+html{
+    overflow-x: hidden;
+}
+
 body{
 font-family: "Montserrat", sans-serif;
 margin: 0%;
 padding: none;
-min-width:1200px;
 max-width: 100%;
 font-size:16px;
 }
@@ -93,10 +97,11 @@ font-size:16px;
 /*1er section grd photo*/
 
 .accueil{
-    background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/bg-header.png');
+    background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/bg-header.png') ;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: 451px;
+    min-height: 451px;
     
 }
 
@@ -419,15 +424,14 @@ text-align: start;
     gap: 70px;
 }
 
-.listh2{
-    flex-direction: column;
-}
 
 .creeforma{
     width: 727px;
     height: 472px;
     object-fit: cover;
 }
+
+
 
 .listcree{
     font-weight: 400;
@@ -538,9 +542,13 @@ text-align: start;
 .formu{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 70px;
-    padding-bottom: 50px;
+    align-items:start;
+    padding: 0px 0px 50px 0px;
+    margin: 0;
+    
+}
+.nomC{
+    margin-right:70px;
 }
 .nomC, .emailC{
     width:598px;
@@ -549,11 +557,19 @@ text-align: start;
     border: none;
 }
 
+input::placeholder{
+   
+    opacity:1;
+    padding: 6px;
+}
+
 .msg{
     width:1335px;
     height: 194px;
     background-color: #152237;
     border:none;
+    color: gray;
+    padding: 6px;
 }
 .msgcon{
     padding-bottom: 50px;
@@ -733,7 +749,12 @@ footer{
 
 /*debut responsive*/
 
-@media (max-width:400px) {
+@media (max-width:600px) {
+    html{
+        width: 100%;
+        
+    }
+
     body{
         width:100%;
         height:auto;
@@ -741,6 +762,7 @@ footer{
         margin:0;
         padding:0;
     }
+    
 
     .menu{
         display: block;
@@ -758,10 +780,30 @@ footer{
         padding: 20px 0;
         z-index: 1000;
     }
-
+    
     .accueil{
-        background-size: auto;
+        height: auto;
+        background-image: linear-gradient(94.01deg, rgba(68, 221, 138, 0.8) 3.11%, rgba(21, 183, 226, 0.8) 98.45%), url('ressources/pexels-polina-zimmerman.png') ;
         
+    }
+
+    .titre{
+        min-height: 364px;
+        width:100%;
+         text-align: center;
+        vertical-align: middle;
+        line-height:auto;
+        
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    h4{
+        font-size:20px;
+        text-align: center;
+        vertical-align: middle;
     }
 
     
@@ -776,11 +818,13 @@ footer{
     .accueil, .entete, .formationPop, .formationRec, .avis, .avantages, .cree, .propos, .h2logo1, .h2logo2, .contact{
         height:auto;
         width:100%;
+        min-width: none;
         padding: 0;
+        padding-bottom:50px;
         margin: 0 auto;
-    }
+    } 
 
-   .boites{
+   .boites, .mentions, .avis, .propos, .avantages, .titre{
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -794,21 +838,63 @@ footer{
     .davis, .avanta, .creek, .propos, .formu {
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    margin: 0;
    
    }
     
-    .searchBar, .nomC, .emailC, .msg, .imgav, .creeforma{
+    .searchBar, .nomC, .emailC, .msg, .creeforma{
         width:100%;
         max-width:100%;
     }
     
    
-    .searchBar, .nomC, .emailC, .msg, .imgav, .creeforma{
-        width: 100%;
-        max-width: 100%;
-    }
     
     .formationPop, .formationRec, .avantages, .cree, .contact, footer{
         height: auto;
+        margin: 0;
     }
+
+    img, p, article, h2, li, ul{
+    max-width:100%;
+    height:auto;
+}
+    .creek{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .av{
+        order: 1;
+    }
+
+    .creeforma{
+        order: 2;
+    }
+
+    .listcree{
+        order: 3;
+    }
+
+    .lis{
+        width:100%;
+        max-width:100%;
+        height:auto;
+        padding-left:0;
+    }
+
+    .imgav, .creeforma{
+        width: 100%;
+        min-width: 324px;
+        height: 243px;
+       
+    }
+    .nomC, .emailC .msgcon{
+        width:100%;
+        height:auto;
+        min-width:356px;
+    
+    }
+    
+
 }
