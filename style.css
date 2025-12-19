@@ -29,7 +29,7 @@ font-size:16px;
     display: block;
 }
 
-.coninsc{
+#coninsc{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -72,10 +72,11 @@ font-size:16px;
     height: 20px;
     object-fit: contain;
 }
-.liens{
+#liens{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
+    margin-right: 200px;
 }
 
 .connexion{
@@ -770,6 +771,10 @@ footer{
         overflow-x: hidden;
         margin:0;
         padding:0;
+    }
+
+    #liens{
+        margin:0;
     }
     
 
