@@ -372,6 +372,7 @@ text-align: start;
     padding-left:40px;
     margin-bottom:18px;
     position:relative;
+    color: #152237;
 }
 
 .lis li::before {
@@ -442,11 +443,13 @@ text-align: start;
     letter-spacing: -1.5%;
     list-style: none;
 }
+
 .listcree li{
     margin-bottom:18px;
     padding-left:40px;
     text-align:start;
     position: relative;
+    color: #152237;
 }
 
 .listcree li::before {
@@ -553,7 +556,7 @@ text-align: start;
     margin-right:70px;
 }
 .nomC, .emailC{
-    width:598px;
+    min-width:634px;
     height:45px;
     background-color: #152237;
     border: none;
@@ -582,6 +585,10 @@ input::placeholder{
     background-color: #44DD8A;
     border: none;
     border-radius: 6px;
+}
+
+.envoie{
+    text-align: center;
 }
 .nous{
     margin-bottom:30px;
@@ -796,19 +803,22 @@ footer{
         vertical-align: middle;
         line-height:auto;
         
+        
     }
 
     h1{
         font-size:32px;
+        height:auto;
+        padding: 0 20px;
     }
 
     h4{
         font-size:20px;
         text-align: center;
         vertical-align: middle;
+        height: auto;
+        padding: 0 20px;
     }
-
-    
 
     .entete{
     min-height: 80px;
@@ -851,7 +861,10 @@ footer{
         max-width:100%;
     }
     
-   
+    .formationpop, .formationsrec{
+        text-align: center;
+        margin-left:0;
+    }
     
     .formationPop, .formationRec, .avantages, .cree, .contact, footer{
         height: auto;
@@ -871,6 +884,13 @@ footer{
     .av{
         order: 1;
     }
+
+    .avisNom{
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    
 
     .creeforma{
         order: 2;
@@ -942,7 +962,7 @@ footer{
     }
 
     .davis{
-        gap: 70px;
+        gap: 20px;
         text-align: center;
     }
     
@@ -956,6 +976,7 @@ footer{
     .propos{
         display: flex;
         flex-direction: column;
+        padding-bottom: 0;
     }
 
     .h2logo2, .h2logo1{
@@ -1030,9 +1051,22 @@ footer{
     text-align: center;
     align-items: center;  
     }
+    
+    .nomC, .emailC{
+        min-width: 356px;
+    }
+    
+    .av{
+        font-size: 30px;
+        padding-top: 30px;
+        margin: 0;
+        text-align: center;
+        padding-left: 0;
+    }
 
- 
-
+    .creek{
+        gap: 20px;
+    }
 
 }
  
