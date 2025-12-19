@@ -44,6 +44,7 @@ font-size:16px;
     height: 40px;
     display: flex;
     align-items: center;
+    margin-right:170px;
 }
 .searchBarr{
       background-color: #152237;
