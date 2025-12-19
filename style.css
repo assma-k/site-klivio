@@ -332,6 +332,7 @@ h2{
 .avisNom{
     font-size:24px;
     font-weight:700;
+    margin-top: 5px;
 }
 
 
@@ -346,9 +347,13 @@ h2{
 margin:0px 80px;
 padding-top: 90px;
 }
+
+.avanta h2{
+    padding-left: 0;
+}
 .av{
  margin-top: 0px;
- padding-left: 40px;
+ padding-left: 30px;
  color: #152237;
  font-weight: 900;
 /*font-style: Black;*/
