@@ -22,14 +22,14 @@ font-size:16px;
     height: 80px;
 }
 
-#logo1{
+.logo1{
     width: 84px;
     height: 31px;
     align-self: center;
     display: block;
 }
 
-#coninsc{
+.coninsc{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,7 +45,7 @@ font-size:16px;
     display: flex;
     align-items: center;
 }
-#searchBar{
+.searchBarr{
       background-color: #152237;
       width: auto;
     height: 40px;
@@ -54,7 +54,7 @@ font-size:16px;
     padding: 0 10px;
     flex: 1;
 }
-#loupe{
+.loupe{
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -72,7 +72,7 @@ font-size:16px;
     height: 20px;
     object-fit: contain;
 }
-#liens{
+.liens{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
@@ -122,13 +122,13 @@ h1{
     height: 60vh;
    
 }
-#textephoto{
+.textephoto{
     margin: 0.1%;
     padding:2px;
     font-size:20px;
     font-weight:500;
 }
-#savoirplus{
+.savoirplus{
     border-radius:6px;
     border:none;
     width:130px;
@@ -164,12 +164,12 @@ h1{
 
 }
 
-#imgpop, #imgrec{
+.imgpop, .imgrec{
     height: 206px;
     width:300px;
 }
 
-#imgpopfin, #imgrec:last-child{
+.imgpopfin, .imgrec:last-child{
     padding-right:0px;
     height: 206px;
     width:300px;
