@@ -44,22 +44,21 @@
 .listcree li{
     margin-bottom:18px;
     padding-left:40px;
-    text-align:start;
     position: relative;
-  
 }
 
 .listcree li::before {
     content: "";
-    left:0;
+    left: 0;
     top: 0.2em;
     width: 20px;
     height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
+    padding-right:10px;
     position: absolute;
     margin-bottom:18px;
-    
+    text-align: start;
 }
 
 .listcree li:nth-child(1)::before{
@@ -76,4 +75,35 @@
 }
 .listcree li:nth-child(5)::before{
     background-image:url("ressources/icon-list-2/user-profile.png");
+}
+
+
+
+.coordo li{
+    padding-left:30px;
+    text-align:start;
+    position: relative;
+    text-indent: -40px;
+}
+
+.coordo li::before{
+    content: "";
+    right: 0;
+    top: 0.2em;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left:30px;
+    padding-right: 10px;
+}
+
+.coordo li:nth-child(1)::before{
+    background-image: url("ressources/social-icon/marker-02.png");
+}
+.coordo li:nth-child(2)::before{
+    background-image: url("ressources/social-icon/phone.png");
+}
+.coordo li:nth-child(3)::before{
+    background-image: url("ressources/social-icon/mail-01.png");
 }
