@@ -8,7 +8,20 @@ Projet scolaire de site web réalisé en **deux versions** :
 
 # git pages 
 
-css : 
-https://assma-k.github.io/site-klivio/
+- css : 
+   https://assma-k.github.io/site-klivio/
 
-tailwind :
+- tailwind :
+   https://assma-k.github.io/site-klivio/tailwind/
+
+---
+
+# technologies utilisées
+
+version css :
+- HTML
+- CSS
+
+version tailwind : 
+- HTML
+- Tailwind
