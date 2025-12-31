@@ -24,8 +24,8 @@
             <a href="#formationPop" id="liens" class="text-xl">Les formations</a>
         </nav>
 
-          <form class="searchBar rounded-lg border-2">
-              <input type="search" class="searchBarr w-[500px] bg-teal-800 items-center p-1  border-none" placeholder="Rechercher" name="search">
+          <form class="searchBar rounded-lg border-2" onsubmit="goTo(event); return false;">
+              <input type="search" id="searchBar" class="searchBarr w-[500px] bg-teal-800 items-center p-1  border-none" placeholder="Rechercher" name="search">
               <button type="submit" class="loupe"><img src="ressources/icone-loup.png" alt="loupe" class="img-loupe h-6 pt-2 w-5"></button>
           </form>
           
@@ -43,7 +43,7 @@
     <main>
 
 
-      <section class="accueil relative bg-[url('ressources/bg-header.png')] bg-cover bg-center h-[655px] w-full flex items-center justify-center">
+      <section id="accueil" class="accueil relative bg-[url('ressources/bg-header.png')] bg-cover bg-center h-[655px] w-full flex items-center justify-center">
           <div class="absolute inset-0 bg-teal-400/50"></div>
         <div class="titre relative flex flex-col gap-10 justify-center items-center text-center text-4xl text-slate-200 font-extrabold">
         <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
@@ -55,7 +55,7 @@
 
 
 
-      <section class="formationPop bg-zinc-100 text-teal-600">
+      <section id="formationPop" class="formationPop bg-zinc-100 text-teal-600">
         <h2 class="formationpop font-bold text-3xl pt-2 text-teal-800 text-center">Les formations populaires</h2>
 
         <div class="boites flex flex-col justify-around gap-6 p-10 md:flex-row">
@@ -146,7 +146,7 @@
       </section>
 
 
-      <section class="formationRec bg-zinc-100 text-teal-600 pb-3">
+      <section id="formationRec" class=" bg-zinc-100 text-teal-600 pb-3">
         <h2 class="formationsrec font-bold text-3xl pt-2 text-teal-800 text-center">Les formations récentes</h2>
         <div class="boites flex flex-col justify-around gap-6 p-10 md:flex-row">
           <article class="f2">
@@ -229,7 +229,7 @@
       </section>
       
 
-      <section class="avis bg-teal-900 text-slate-300 py-9">
+      <section id="avis" class="avis bg-teal-900 text-slate-300 py-9">
         <h2 class="aavis text-3xl font-extrabold text-center pb-3">AVIS CLIENTS</h2>
         <div class="davis flex flex-col md:flex-row gap-10 justify-center items-center px-9">
         <article class="w-1/2">
@@ -269,7 +269,7 @@
       </section>
 
       
-      <section class="avantages p-7">
+      <section id="avantages" class="avantages p-7">
         
         <div class="avanta flex flex-col md:flex-row justify-center items-center">
         <div class="list">
@@ -288,7 +288,7 @@
       </section>
 
 
-      <section class="cree p-7 text-slate-200 bg-teal-900">
+      <section id="créer" class="cree p-7 text-slate-200 bg-teal-900">
         <h3 class="hidden">Titre de l’article</h3>
         <article class="creek flex flex-col md:flex-row-reverse justify-center items-center gap-5">
           
@@ -309,7 +309,7 @@
     </section>
 
 
-      <section class="propos flex flex-col md:flex-row ">
+      <section id="propos" class="propos flex flex-col md:flex-row ">
         <h3 class="hidden">Titre de l’article</h3>
         <article class="h2logo1 md:w-1/2">
           <h2 class="proposh2 text-center text-teal-800 text-3xl font-extrabold">À PROPOS DE KLIVIO</h2>
@@ -322,7 +322,7 @@
       </section>
 
 
-      <section class="contact flex flex-col justify-center items-center md:p-10">
+      <section id="contact" class="contact flex flex-col justify-center items-center md:p-10">
         <h3 class="hidden">Titre de l’article</h3>
         <h2 class="nous text-teal-800 text-3xl font-extrabold">NOUS CONTACTER</h2>
         <fieldset class="contactB">

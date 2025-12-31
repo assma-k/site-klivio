@@ -1,18 +1,25 @@
-function goTo(){
-    const rech = document.getElementById("searchBar").ariaValueMax.trim().toLowerCase();
-    const section = {
-        "accueil" : "accueil",
-        "formationpop" : "formationPop",
-        "formationrec" : "formationRec",
-        "avis" : "avis",
-        "contact" : "contact"
-    };
+function goTo(e) {
+  e.preventDefault();
 
-    const cherche = section[rech];
-    if(cherche) {
-        document.getElementById(cherche).scrollIntoView({behavior : "smooth"});
+  const rech = document.getElementById("searchBar").value.trim().toLowerCase();
+  const section = {
+    accueil: "accueil",
+    formationpop: "formationPop",
+    formationrec: "formationRec",
+    avantages: "avantages",
+    créer: "créer",
+    avis: "avis",
+    propos: "propos",
+    contact: "contact",
+  };
+
+  const cherche = section[rech];
+  if (cherche) {
+    const element = document.getElementById(cherche);
+    if(element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
-    else{
-        alert("inconnu !");
-    }
+  } else {
+    alert("inconnu !");
+  }
 }
