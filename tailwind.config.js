@@ -5,7 +5,11 @@ module.exports = {
     "./tailwind/*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        "montserrat":['Monserrat', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

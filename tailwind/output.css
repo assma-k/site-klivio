@@ -763,6 +763,11 @@ video {
   border-style: none;
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+
 .bg-teal-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(45 212 191 / var(--tw-bg-opacity, 1));
@@ -790,11 +795,6 @@ video {
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'ressources\/bg-header\.png\'\)\] {
@@ -880,6 +880,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-montserrat {
+  font-family: Monserrat, sans-serif;
 }
 
 .text-3xl {

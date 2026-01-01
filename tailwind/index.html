@@ -1,394 +1,792 @@
 <!DOCTYPE html>
 <html lang="fr" class="overflow-x-hidden">
-    <head>
-        <link rel="stylesheet" href="output.css">
-        <link rel="stylesheet" href="puces.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Klivio</title>
-    </head>
+  <head>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="puces.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Klivio</title>
+  </head>
 
-
-    <body class="overflow-x-hidden bg-slate-200">
-
-    <script src="https://kit.fontawesome.com/3ee1cc3628.js" crossorigin="anonymous"></script>
+  <body class="overflow-x-hidden bg-slate-200 font-montserrat">
+    <script
+      src="https://kit.fontawesome.com/3ee1cc3628.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="search.js"></script>
 
-    <header class="entete flex content-center justify-between items-center bg-teal-800 w-full p-4 text-white h-[100px]">
+    <header
+      class="entete flex content-center justify-between items-center bg-teal-800 w-full p-4 text-white h-[100px]"
+    >
+      <img src="ressources/logo.png" class="logo1 h-9 md:h-12" alt="logo" />
 
-        <img src="ressources/logo.png" class="logo1 h-9 md:h-12" alt="logo">
-
-        <div class="menumob hidden md:flex items-center gap-8 lg:gap-40 flex-1 px-16">
-
+      <div
+        class="menumob hidden md:flex items-center gap-8 lg:gap-40 flex-1 px-16"
+      >
         <nav>
-            <a href="#formationPop" id="liens" class="text-xl">Les formations</a>
+          <a href="#formationPop" id="liens" class="text-xl">Les formations</a>
         </nav>
 
-          <form class="searchBar rounded-lg border-2" onsubmit="goTo(event); return false;">
-              <input type="search" id="searchBar" class="searchBarr w-[500px] bg-teal-800 items-center p-1  border-none" placeholder="Rechercher" name="search">
-              <button type="submit" class="loupe"><img src="ressources/icone-loup.png" alt="loupe" class="img-loupe h-6 pt-2 w-5"></button>
-          </form>
-          
-            <div id="coninsc" class="connexion-inscription ml-auto flex gap-1 flex-col">
-              <button class="connexion rounded border-none bg-teal-400 h-10 w-24">Connexion</button>
-              <button class="inscription rounded border-none bg-teal-400 h-10 w-24">Inscription</button>
-          </div>
+        <form
+          class="searchBar rounded-lg border-2"
+          onsubmit="goTo(event); return false;"
+        >
+          <input
+            type="search"
+            id="searchBar"
+            class="searchBarr w-[500px] bg-teal-800 items-center p-1 border-none"
+            placeholder="Rechercher"
+            name="search"
+          />
+          <button type="submit" class="loupe">
+            <img
+              src="ressources/icone-loup.png"
+              alt="loupe"
+              class="img-loupe h-6 pt-2 w-5"
+            />
+          </button>
+        </form>
 
+        <div
+          id="coninsc"
+          class="connexion-inscription ml-auto flex gap-1 flex-col"
+        >
+          <button class="connexion rounded border-none bg-teal-400 h-10 w-24">
+            Connexion
+          </button>
+          <button class="inscription rounded border-none bg-teal-400 h-10 w-24">
+            Inscription
+          </button>
         </div>
+      </div>
 
-          <button class="menu md:hidden"><i class="fas fa-bars"></i></button>
+      <button class="menu md:hidden"><i class="fas fa-bars"></i></button>
     </header>
 
-
     <main>
-
-
-      <section id="accueil" class="accueil relative bg-[url('ressources/bg-header.png')] bg-cover bg-center h-[655px] w-full flex items-center justify-center">
-          <div class="absolute inset-0 bg-teal-400/50"></div>
-        <div class="titre relative flex flex-col gap-10 justify-center items-center text-center text-4xl text-slate-200 font-extrabold">
-        <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
-        <h4 class="textephoto text-xl font-bold">LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL</h4>
-        <button class="savoirplus bg-teal-800 h-12 w-36 rounded font-normal text-sm">En savoir plus</button>
+      <section
+        id="accueil"
+        class="accueil relative bg-[url('ressources/bg-header.png')] bg-cover bg-center h-[655px] w-full flex items-center justify-center"
+      >
+        <div class="absolute inset-0 bg-teal-400/50"></div>
+        <div
+          class="titre relative flex flex-col gap-10 justify-center items-center text-center text-4xl text-slate-200 font-extrabold"
+        >
+          <h1>KLIVIO, L'ALLIÉ DE VOTRE PROGRESSION</h1>
+          <h4 class="textephoto text-xl font-bold">
+            LES MEILLEURES FORMATIONS SUR LE DÉVELOPPEMENT PERSONNEL
+          </h4>
+          <button
+            class="savoirplus bg-teal-800 h-12 w-36 rounded font-normal text-sm"
+          >
+            En savoir plus
+          </button>
         </div>
-
       </section>
 
-
-
       <section id="formationPop" class="formationPop bg-zinc-100 text-teal-600">
-        <h2 class="formationpop font-bold text-3xl pt-2 text-teal-800 text-center">Les formations populaires</h2>
+        <h2
+          class="formationpop font-bold text-3xl pt-2 text-teal-800 text-center"
+        >
+          Les formations populaires
+        </h2>
 
         <div class="boites flex flex-col justify-around gap-6 p-10 md:flex-row">
-        
+          <article class="f">
+            <h3 class="hidden">Titre de l’article</h3>
 
-        <article class="f">
-
-          <h3 class="hidden">Titre de l’article</h3>
-
-              <div class="img-t relative inline-block">
-            <img src="ressources/img-course.png" alt="formationpop-img-1" class="imgpop rounded-lg">
-            <fieldset class="pr1  absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"><p class="P1">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
-              </div>
+            <div class="img-t relative inline-block">
+              <img
+                src="ressources/img-course.png"
+                alt="formationpop-img-1"
+                class="imgpop rounded-lg"
+              />
+              <fieldset
+                class="pr1 absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+              >
+                <p class="P1">
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
+            </div>
 
             <p class="nomImg text-[18px] font-semibold">Parler en public</p>
             <p class="autorForma">Sonia Lefévre | Coach prise de parole</p>
 
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
 
-            <p class="descForma w-[206px]">Gagner en aisance et capter votre auditoire</p>
-        </article>
+            <p class="descForma w-[206px]">
+              Gagner en aisance et capter votre auditoire
+            </p>
+          </article>
 
-        
-        <article class="f">
-          <h3 class="hidden">Titre de l’article</h3>
+          <article class="f">
+            <h3 class="hidden">Titre de l’article</h3>
             <div class="img-t relative inline-block">
-            <img src="ressources/img-course.png" alt="formationpop-img-2" class="imgpop rounded-lg">
-            <fieldset class="pr1  absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"><p class="P1">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationpop-img-2"
+                class="imgpop rounded-lg"
+              />
+              <fieldset
+                class="pr1 absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+              >
+                <p class="P1">
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
             <p class="nomImg text-[18px] font-semibold">Gérer le stress</p>
             <p class="autorForma">Lucie Garnier | Formatrice</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400 text-opacity-30" data-active="false"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400 text-opacity-30"
+                data-active="false"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Apprendre à rester serein face aux défis</p>
-        </article>
+            <p class="descForma w-[206px]">
+              Apprendre à rester serein face aux défis
+            </p>
+          </article>
 
-        <article class="f">
-          <h3 class="hidden">Titre de l’article</h3>
+          <article class="f">
+            <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-        <img src="ressources/img-course.png" alt="formationpop-img-3" class="imgpop rounded-lg">
-          <fieldset class="pr1  absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"><p class="P1">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationpop-img-3"
+                class="imgpop rounded-lg"
+              />
+              <fieldset
+                class="pr1 absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+              >
+                <p class="P1">
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
             <p class="nomImg text-[18px] font-semibold">Travailler en équipe</p>
             <p class="autorForma">Davclass Moreau | Expert</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Collaborez efficacement, même à distance</p>
-        </article>
-        <article class="f">
-          <h3 class="hidden">Titre de l’article</h3>
+            <p class="descForma w-[206px]">
+              Collaborez efficacement, même à distance
+            </p>
+          </article>
+          <article class="f">
+            <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-        <img src="ressources/img-course.png" alt="formationpop-img-4" class="imgpop rounded-lg">
-            <fieldset class="pr1  absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"><p class="P1">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationpop-img-4"
+                class="imgpop rounded-lg"
+              />
+              <fieldset
+                class="pr1 absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+              >
+                <p class="P1">
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
             <p class="nomImg text-[18px] font-semibold">Gérer son temps</p>
             <p class="autorForma">Claire Dumas | Coach organisation</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400 text-opacity-30" data-active="false"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400 text-opacity-30"
+                data-active="false"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Optimiser vos journées et gagnez en efficacité</p>
-        </article>
+            <p class="descForma w-[206px]">
+              Optimiser vos journées et gagnez en efficacité
+            </p>
+          </article>
         </div>
-        
 
-        <button class="plusForma1 bg-teal-800 h-9 w-52 rounded text-slate-200 flex items-center text-center pl-5 mx-auto mt-6">Voir plus de formations</button>
+        <button
+          class="plusForma1 bg-teal-800 h-9 w-52 rounded text-slate-200 flex items-center text-center pl-5 mx-auto mt-6"
+        >
+          Voir plus de formations
+        </button>
       </section>
 
-
-      <section id="formationRec" class=" bg-zinc-100 text-teal-600 pb-3">
-        <h2 class="formationsrec font-bold text-3xl pt-2 text-teal-800 text-center">Les formations récentes</h2>
+      <section id="formationRec" class="bg-zinc-100 text-teal-600 pb-3">
+        <h2
+          class="formationsrec font-bold text-3xl pt-2 text-teal-800 text-center"
+        >
+          Les formations récentes
+        </h2>
         <div class="boites flex flex-col justify-around gap-6 p-10 md:flex-row">
           <article class="f2">
             <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-          <img src="ressources/img-course.png" alt="formationrec-img-1" class="imgrec rounded-lg">
-            <fieldset class="pr"><p class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationrec-img-1"
+                class="imgrec rounded-lg"
+              />
+              <fieldset class="pr">
+                <p
+                  class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+                >
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
             <p class="nomImg text-[18px] font-semibold">Mieux communiquer</p>
             <p class="autorForma">Julien Martel | Coach en comm.</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Ameliorez vos échanges et votre impact relationnel</p>
+            <p class="descForma w-[206px]">
+              Ameliorez vos échanges et votre impact relationnel
+            </p>
           </article>
 
           <article class="f2">
             <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-            <img src="ressources/img-course.png" alt="formationrec-img-2" class="imgrec rounded-lg">
-            <fieldset class="pr"><p class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationrec-img-2"
+                class="imgrec rounded-lg"
+              />
+              <fieldset class="pr">
+                <p
+                  class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+                >
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
-            <p class="nomImg text-[18px] font-semibold">Maîtriser ses émotions</p>
+            <p class="nomImg text-[18px] font-semibold">
+              Maîtriser ses émotions
+            </p>
             <p class="autorForma">Amel Benali | Psy. du travail</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Développez calme et intelligence émotionnelle</p>
-        </article>
+            <p class="descForma w-[206px]">
+              Développez calme et intelligence émotionnelle
+            </p>
+          </article>
 
-        <article class="f2">
-          <h3 class="hidden">Titre de l’article</h3>
+          <article class="f2">
+            <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-            <img src="ressources/img-course.png" alt="formationrec-img-3" class="imgrec rounded-lg">
-            <fieldset class="pr"><p class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationrec-img-3"
+                class="imgrec rounded-lg"
+              />
+              <fieldset class="pr">
+                <p
+                  class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+                >
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
-            <p class="nomImg text-[18px] font-semibold">Résoudre les problèmes</p>
+            <p class="nomImg text-[18px] font-semibold">
+              Résoudre les problèmes
+            </p>
             <p class="autorForma">Thomas Riviére | Expert</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400 text-opacity-30" data-active="false"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400 text-opacity-30"
+                data-active="false"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Analysez, décclassez et trouvez des solutions durables</p>
+            <p class="descForma w-[206px]">
+              Analysez, décclassez et trouvez des solutions durables
+            </p>
           </article>
           <article class="f2">
             <h3 class="hidden">Titre de l’article</h3>
 
             <div class="img-t relative inline-block">
-          <img src="ressources/img-course.png" alt="formationrec-img-4" class="imgrec rounded-lg">
-            <fieldset class="pr"><p class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow">15.99 €<span class="prix  line-through text-teal-700 ml-2"> 60 €</span></p></fieldset>
+              <img
+                src="ressources/img-course.png"
+                alt="formationrec-img-4"
+                class="imgrec rounded-lg"
+              />
+              <fieldset class="pr">
+                <p
+                  class="P absolute -bottom-0.5 right-2 text-slate-200 bg-teal-950 rounded-full px-3 py-1 flex items-center justify-center shadow"
+                >
+                  15.99 €<span class="prix line-through text-teal-700 ml-2">
+                    60 €</span
+                  >
+                </p>
+              </fieldset>
             </div>
             <p class="nomImg text-[18px] font-semibold">Leadership positif</p>
             <p class="autorForma">Marc Nguyen | Consultant</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400 text-opacity-30" data-active="false"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400 text-opacity-30"
+                data-active="false"
+              ></i>
             </div>
-            <p class="descForma w-[206px]">Inspirez, motivez et fédérez votre equipe</p>
+            <p class="descForma w-[206px]">
+              Inspirez, motivez et fédérez votre equipe
+            </p>
           </article>
-      </div>
+        </div>
 
-        <button class="plusForma2 bg-teal-800 h-9 w-52 rounded text-slate-200 flex items-center text-center pl-5 mx-auto mt-6">Voir plus de formations</button>
+        <button
+          class="plusForma2 bg-teal-800 h-9 w-52 rounded text-slate-200 flex items-center text-center pl-5 mx-auto mt-6"
+        >
+          Voir plus de formations
+        </button>
       </section>
-      
 
       <section id="avis" class="avis bg-teal-900 text-slate-300 py-9">
-        <h2 class="aavis text-3xl font-extrabold text-center pb-3">AVIS CLIENTS</h2>
-        <div class="davis flex flex-col md:flex-row gap-10 justify-center items-center px-9">
-        <article class="w-1/2">
-          <h3 class="hidden">Titre de l’article</h3>
+        <h2 class="aavis text-3xl font-extrabold text-center pb-3">
+          AVIS CLIENTS
+        </h2>
+        <div
+          class="davis flex flex-col md:flex-row gap-10 justify-center items-center px-9"
+        >
+          <article class="w-1/2">
+            <h3 class="hidden">Titre de l’article</h3>
 
-            <img src="ressources/juliette.png" alt="juliette" class="imgA rounded-full">
+            <img
+              src="ressources/juliette.png"
+              alt="juliette"
+              class="imgA rounded-full"
+            />
             <p class="avisNom p-4 text-[18px] font-bold">Juliette</p>
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
-              
-            <p class="avisP w-auto">J'ai trouvé le parcours trés bien structuré : vclasséos courtes, quizzes pertients et projets pratiques qui m'ont permis d'appliquer immédiatement les notions. L'interface est claire et la progression est motivante — parfait pour se former en autonomie.</p>
 
-        </article>
+            <p class="avisP w-auto">
+              J'ai trouvé le parcours trés bien structuré : vclasséos courtes,
+              quizzes pertients et projets pratiques qui m'ont permis
+              d'appliquer immédiatement les notions. L'interface est claire et
+              la progression est motivante — parfait pour se former en
+              autonomie.
+            </p>
+          </article>
 
-        <article class="w-1/2">
-          <h3 class="hidden">Titre de l’article</h3>
+          <article class="w-1/2">
+            <h3 class="hidden">Titre de l’article</h3>
 
-          <img src="ressources/camille.png" alt="camille" class="imgA rounded-full">
-          <p class="avisNom p-4 text-[18px] font-bold">Camille</p>
+            <img
+              src="ressources/camille.png"
+              alt="camille"
+              class="imgA rounded-full"
+            />
+            <p class="avisNom p-4 text-[18px] font-bold">Camille</p>
 
             <div class="etoiles">
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
-                <i class="fas fa-star icon text-yellow-400" data-active="true"></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star icon text-yellow-400"
+                data-active="true"
+              ></i>
             </div>
 
-            <p class="avisP w-auto">Bon équilibre entre théorie et pratique. Les chapitres sont détaillés, et le support et les corrections automatiques ont vraiment aclassé. classéal pour démarrer et progresser rapclassement.</p>
-        </article>
+            <p class="avisP w-auto">
+              Bon équilibre entre théorie et pratique. Les chapitres sont
+              détaillés, et le support et les corrections automatiques ont
+              vraiment aclassé. classéal pour démarrer et progresser
+              rapclassement.
+            </p>
+          </article>
         </div>
       </section>
 
-      
       <section id="avantages" class="avantages p-7">
-        
-        <div class="avanta flex flex-col md:flex-row justify-center items-center">
-        <div class="list">
-            <h2 class="av text-3xl font-extrabold text-teal-800 pb-6">LES AVANTAGES KLIVIO</h2>
-            <ul class="lis  md:pr-20">
-                <li>Suivi de sa progression</li>
-                <li>Exercices et QCM pour la mise en pratique</li>
-                <li>Possibilité de télécharger/imprimer les formations</li>
-                <li>Contenu qualitatif et vérifié</li>
-                <li>Suivi en autonomie, 24h/24, 7j/7</li>
-                <li>Espaces d’échanges dédiés pour poser ses questions sur les formations</li>
+        <div
+          class="avanta flex flex-col md:flex-row justify-center items-center"
+        >
+          <div class="list">
+            <h2 class="av text-3xl font-extrabold text-teal-800 pb-6">
+              LES AVANTAGES KLIVIO
+            </h2>
+            <ul class="lis md:pr-20">
+              <li>Suivi de sa progression</li>
+              <li>Exercices et QCM pour la mise en pratique</li>
+              <li>Possibilité de télécharger/imprimer les formations</li>
+              <li>Contenu qualitatif et vérifié</li>
+              <li>Suivi en autonomie, 24h/24, 7j/7</li>
+              <li>
+                Espaces d’échanges dédiés pour poser ses questions sur les
+                formations
+              </li>
             </ul>
+          </div>
+          <img
+            src="ressources/avantages.png"
+            alt="avantages"
+            class="imga rounded-2xl w-auto h-auto"
+          />
         </div>
-        <img src="ressources/avantages.png" alt="avantages" class="imga rounded-2xl w-auto h-auto">
-    </div>
       </section>
-
 
       <section id="créer" class="cree p-7 text-slate-200 bg-teal-900">
         <h3 class="hidden">Titre de l’article</h3>
-        <article class="creek flex flex-col md:flex-row-reverse justify-center items-center gap-5">
-          
+        <article
+          class="creek flex flex-col md:flex-row-reverse justify-center items-center gap-5"
+        >
           <div class="jsp w-1/2">
-        <h2 class="av text-3xl font-extrabold  pb-6">CRÉEZ VOS FORMATIONS AVEC KLIVIO</h2>
+            <h2 class="av text-3xl font-extrabold pb-6">
+              CRÉEZ VOS FORMATIONS AVEC KLIVIO
+            </h2>
             <ul class="listcree md:pr-20">
-                <li>Commission unique, au pourcentage sur les ventes</li>
-                <li>Mise en avant sur la plateforme</li>
-                <li>Contrôle total sur le cours : contenu, prix</li>
-                <li>Fonctionnalités avancées : espace commentaires, possibilité de créer des QCM, exercices, vclasséos, téléchargement en PDF, suivi des statistiques des ventes, gestion de codes promos, gestion de la facturation, etc</li>
-                <li>Le professeur reste 100% propriétaire de sa formation et conserve tous ses droits d’auteur</li>
+              <li>Commission unique, au pourcentage sur les ventes</li>
+              <li>Mise en avant sur la plateforme</li>
+              <li>Contrôle total sur le cours : contenu, prix</li>
+              <li>
+                Fonctionnalités avancées : espace commentaires, possibilité de
+                créer des QCM, exercices, vclasséos, téléchargement en PDF,
+                suivi des statistiques des ventes, gestion de codes promos,
+                gestion de la facturation, etc
+              </li>
+              <li>
+                Le professeur reste 100% propriétaire de sa formation et
+                conserve tous ses droits d’auteur
+              </li>
             </ul>
-        </div>
-        
-          <img src="ressources/become-author.png" alt="creer-formation" class="creeforma  rounded-2xl w-auto h-auto">
-       
-      </article>
-    </section>
+          </div>
 
-
-      <section id="propos" class="propos flex flex-col md:flex-row ">
-        <h3 class="hidden">Titre de l’article</h3>
-        <article class="h2logo1 md:w-1/2">
-          <h2 class="proposh2 text-center text-teal-800 text-3xl font-extrabold">À PROPOS DE KLIVIO</h2>
-          <P class="pro p-5 text-center text-teal-800" >Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail.<br><br>Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guclassant notre mission d'offrir des opportunités d'apprentissage de qualité</P>
-        </article>
-        <article class="h2logo2 bg-teal-900 md:w-1/2 justify-center items-center flex h-96">
-          <h3 class="hidden">Titre de l’article</h3>
-        <img src="ressources/logo.png" alt="logo" class="proposlogo">
+          <img
+            src="ressources/become-author.png"
+            alt="creer-formation"
+            class="creeforma rounded-2xl w-auto h-auto"
+          />
         </article>
       </section>
 
-
-      <section id="contact" class="contact flex flex-col justify-center items-center md:p-10">
+      <section id="propos" class="propos flex flex-col md:flex-row">
         <h3 class="hidden">Titre de l’article</h3>
-        <h2 class="nous text-teal-800 text-3xl font-extrabold">NOUS CONTACTER</h2>
-        <fieldset class="contactB">
-        </fieldset>
-        <form class="contact1 bg-teal-400/50 w-full h-auto ">
-            <div class="formu p-5 text-center md:flex md:gap-4 ">
-                <input type="text" placeholder="Nom" class="nomC bg-teal-900 w-1/2 h-7 placeholder-slate-200 mb-3">
-            
-                <input type="email" placeholder="Email" class="emailC bg-teal-900 w-1/2 h-7 placeholder-slate-200">
-            </div>
-            
-            <div class="msgcon text-center p-5">
-                <textarea name="messages" rows="12" cols="90" class="msg bg-teal-900 w-full text-slate-200">Votre message</textarea>
-            </div>
-            <div class="envoie flex flex-col justify-center items-center p-3 ">
-                <input type="submit" value="Envoyer" class="envoyerC bg-teal-900 text-slate-200 h-11 w-24 rounded">
-            </div>
+        <article class="h2logo1 md:w-1/2">
+          <h2
+            class="proposh2 text-center text-teal-800 text-3xl font-extrabold"
+          >
+            À PROPOS DE KLIVIO
+          </h2>
+          <p class="pro p-5 text-center text-teal-800">
+            Chez Klivio, nous défendons des valeurs fondamentales qui
+            définissent notre approche éducative. Nous nous engageons à assurer
+            une rémunération équitable pour les créateurs de contenu,
+            reconnaissant la qualité de leur travail.<br /><br />Favorisant
+            l'autonomie d'apprentissage, notre plateforme offre la flexibilité
+            écessaire pour explorer divers sujets. La transparence est au cœur
+            de notre démarche, garantissant une clarté totale sur les formations
+            que les instructeurs proposent. Ensemble, ces valeurs forment le
+            socle d'une ducation enrichissante et équitable, guclassant notre
+            mission d'offrir des opportunités d'apprentissage de qualité
+          </p>
+        </article>
+        <article
+          class="h2logo2 bg-teal-900 md:w-1/2 justify-center items-center flex h-96"
+        >
+          <h3 class="hidden">Titre de l’article</h3>
+          <img src="ressources/logo.png" alt="logo" class="proposlogo" />
+        </article>
+      </section>
+
+      <section
+        id="contact"
+        class="contact flex flex-col justify-center items-center md:p-10"
+      >
+        <h3 class="hidden">Titre de l’article</h3>
+        <h2 class="nous text-teal-800 text-3xl font-extrabold">
+          NOUS CONTACTER
+        </h2>
+        <fieldset class="contactB"></fieldset>
+        <form class="contact1 bg-teal-400/50 w-full h-auto">
+          <div class="formu p-5 text-center md:flex md:gap-4">
+            <input
+              type="text"
+              placeholder="Nom"
+              class="nomC bg-teal-900 w-1/2 h-7 placeholder-slate-200 mb-3"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="emailC bg-teal-900 w-1/2 h-7 placeholder-slate-200"
+            />
+          </div>
+
+          <div class="msgcon text-center p-5">
+            <textarea
+              name="messages"
+              rows="12"
+              cols="90"
+              class="msg bg-teal-900 w-full text-slate-200"
+            >
+Votre message</textarea
+            >
+          </div>
+          <div class="envoie flex flex-col justify-center items-center p-3">
+            <input
+              type="submit"
+              value="Envoyer"
+              class="envoyerC bg-teal-900 text-slate-200 h-11 w-24 rounded"
+            />
+          </div>
         </form>
       </section>
     </main>
-        <fieldset class="foot-1">
-
-        </fieldset>
+    <fieldset class="foot-1"></fieldset>
     <footer class="bg-teal-900 text-slate-200 p-4">
-        
+      <div
+        class="mentions flex flex-col md:flex-row items-center justify-around"
+      >
+        <img
+          src="ressources/logo.png"
+          alt="logo"
+          class="logofoot md:w-96 w-auto"
+        />
+        <div class="ment flex flex-col items-start">
+          <p class="pfoot text-xl font-bold pb-4">Mentions légales</p>
+          <ul class="legales">
+            <li>CGU</li>
+            <li>CGV</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+          </ul>
+        </div>
 
-      <div class="mentions flex flex-col md:flex-row items-center justify-around">
-        <img src="ressources/logo.png" alt="logo" class="logofoot md:w-96 w-auto">
-          <div class="ment flex flex-col items-start">
-            <p class="pfoot text-xl font-bold pb-4">Mentions légales</p>
-            <ul class="legales">
-                <li>CGU</li>
-                <li>CGV</li>
-                <li>FAQ</li>
-                <li>Contact</li>
-            </ul>
-          </div>
-
-          <div class="ment2">
-            <p class="pfoot text-xl font-bold pb-4">Coordonnées</p>
-            <ul class="coordo">
-                <li>1 place république,<br>75003 Paris</li>
-                <li>01.02.03.04.05</li>
-                <li>contact@klivio.fr</li>
-            </ul>
-          </div>
-          <div class="butt hidden md:flex md:flex-col md:gap-4">
-          <button class="connexion bg-teal-400 h-10 w-24 rounded">connexion</button>
-          <button class="inscription bg-teal-400 h-10 w-24 rounded">inscription</button>
+        <div class="ment2">
+          <p class="pfoot text-xl font-bold pb-4">Coordonnées</p>
+          <ul class="coordo">
+            <li>1 place république,<br />75003 Paris</li>
+            <li>01.02.03.04.05</li>
+            <li>contact@klivio.fr</li>
+          </ul>
+        </div>
+        <div class="butt hidden md:flex md:flex-col md:gap-4">
+          <button class="connexion bg-teal-400 h-10 w-24 rounded">
+            connexion
+          </button>
+          <button class="inscription bg-teal-400 h-10 w-24 rounded">
+            inscription
+          </button>
         </div>
       </div>
-       
+
       <fieldset class="foot-2"></fieldset>
 
-     <div class="social hidden md:flex md:flex-row md:items-center md:justify-between">
-      <p class="since">© Klivio - 2025</p>
-      <div class="reseau hidden md:flex md:flex-row md:items-center md:gap-4">
-            <p class="suivre">Suivez - nous</p>
-            <img src="ressources/social-icon/Social-Icons-f.png" alt="facebook">
-            <img src="ressources/social-icon/x.png" alt="x">
-            <img src="ressources/social-icon/instag.png" alt="instagram">
-            <img src="ressources/social-icon/in.png" alt="linkedin">
-            </div>
-    </div>
-
+      <div
+        class="social hidden md:flex md:flex-row md:items-center md:justify-between"
+      >
+        <p class="since">© Klivio - 2025</p>
+        <div class="reseau hidden md:flex md:flex-row md:items-center md:gap-4">
+          <p class="suivre">Suivez - nous</p>
+          <img src="ressources/social-icon/Social-Icons-f.png" alt="facebook" />
+          <img src="ressources/social-icon/x.png" alt="x" />
+          <img src="ressources/social-icon/instag.png" alt="instagram" />
+          <img src="ressources/social-icon/in.png" alt="linkedin" />
+        </div>
+      </div>
     </footer>
-    </body>
-
+  </body>
 </html>
