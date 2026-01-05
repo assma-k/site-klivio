@@ -25,3 +25,4 @@ version css :
 version tailwind : 
 - HTML
 - Tailwind
+- CSS
